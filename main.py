@@ -47,9 +47,9 @@ def test_bucketing_by_health():
 
     present_capacities_mixed = [100, 83, 64, 60, 110, 85]
     counts_mixed = count_batteries_by_health(present_capacities_mixed)
-    assert(counts_mixed["healthy"] == 3)
+    assert(counts_mixed["healthy"] == 2)
     assert(counts_mixed["exchange"] == 2)
-    assert(counts_mixed["failed"] == 1)
+    assert(counts_mixed["failed"] == 2)
 
     print("All test cases passed!")
 
